@@ -19,7 +19,3 @@ plugin.tx_sicfortune {
         file = {$plugin.tx_sicfortune.settings.file}
     }
 }
-
-[{$plugin.tx_sicfortune.settings.includeDefaultCss} == 1]
-    page.includeCSS.sic_fortune = EXT:sic_fortune/Resources/Public/Css/fortune.css
-[end]
