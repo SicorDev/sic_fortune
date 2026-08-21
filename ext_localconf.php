@@ -11,6 +11,7 @@ defined('TYPO3') || die();
         // non-cacheable: random changes per request; daily mode writes to DB on first access
         [
             \SICOR\SicFortune\Controller\FortuneController::class => 'show',
-        ]
+        ],
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
 })();
