@@ -1,0 +1,11 @@
+plugin.tx_sicfortune {
+    persistence {
+        storagePid =
+    }
+    settings {
+        source = db
+        mode = random
+        file =
+        includeDefaultCss = 1
+    }
+}

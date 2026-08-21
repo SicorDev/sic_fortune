@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SICOR\SicFortune\:
+    resource: '../Classes/*'
+
+  SICOR\SicFortune\Controller\FortuneController:
+    public: true

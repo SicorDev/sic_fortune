@@ -1,0 +1,25 @@
+plugin.tx_sicfortune {
+    view {
+        templateRootPaths {
+            0 = EXT:sic_fortune/Resources/Private/Templates/
+        }
+        partialRootPaths {
+            0 = EXT:sic_fortune/Resources/Private/Partials/
+        }
+        layoutRootPaths {
+            0 = EXT:sic_fortune/Resources/Private/Layouts/
+        }
+    }
+    persistence {
+        storagePid = {$plugin.tx_sicfortune.persistence.storagePid}
+    }
+    settings {
+        source = {$plugin.tx_sicfortune.settings.source}
+        mode = {$plugin.tx_sicfortune.settings.mode}
+        file = {$plugin.tx_sicfortune.settings.file}
+    }
+}
+
+[{$plugin.tx_sicfortune.settings.includeDefaultCss} == 1]
+    page.includeCSS.sic_fortune = EXT:sic_fortune/Resources/Public/Css/fortune.css
+[end]

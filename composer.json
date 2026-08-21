@@ -1,0 +1,27 @@
+{
+    "name": "sicor/sic-fortune",
+    "description": "Fortune Cookie – displays random quotes or citation of the day from database or fortune file",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "SICOR Dev Team",
+            "email": "dev@sicor.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-core": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SICOR\\SicFortune\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sic_fortune"
+        }
+    }
+}

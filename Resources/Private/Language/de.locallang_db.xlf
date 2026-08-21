@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="Messages" date="2026-08-20" product-name="sic_fortune">
+        <header/>
+        <body>
+            <trans-unit id="tx_sicfortune_domain_model_fortune">
+                <target>Zitat / Fortune Cookie</target>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.text">
+                <target>Zitattext</target>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.author">
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.lang">
+                <target>Sprachkürzel (z. B. de, en)</target>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.showon">
+                <target>Anzeigdatum</target>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.showon.description">
+                <target>Wird im Modus „Zitat des Tages" automatisch gesetzt (Format: JJJJ-MM-TT). Feld leeren, um das Zitat wieder freizugeben.</target>
+            </trans-unit>
+            <trans-unit id="tab.daily">
+                <target>Zitat des Tages</target>
+            </trans-unit>
+            <trans-unit id="plugin.fortune.title">
+                <target>Fortune Cookie</target>
+            </trans-unit>
+            <trans-unit id="flexform.sheet.general">
+                <target>Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="flexform.source">
+                <target>Datenquelle</target>
+            </trans-unit>
+            <trans-unit id="flexform.source.db">
+                <target>Datenbank</target>
+            </trans-unit>
+            <trans-unit id="flexform.source.file">
+                <target>Fortune-Datei (Unix-Format)</target>
+            </trans-unit>
+            <trans-unit id="flexform.mode">
+                <target>Anzeigemodus</target>
+            </trans-unit>
+            <trans-unit id="flexform.mode.random">
+                <target>Zufälliges Zitat</target>
+            </trans-unit>
+            <trans-unit id="flexform.mode.daily">
+                <target>Zitat des Tages</target>
+            </trans-unit>
+            <trans-unit id="flexform.storagePid">
+                <target>Datensatz-Seite (PID, 0 = TypoScript-Standard)</target>
+            </trans-unit>
+            <trans-unit id="flexform.file">
+                <target>Fortune-Datei</target>
+            </trans-unit>
+            <trans-unit id="flexform.file.de_quotes">
+                <target>Deutsche Zitate (mitgeliefert)</target>
+            </trans-unit>
+            <trans-unit id="flexform.file.humorists">
+                <target>Humoristen – René Fritz / cc_fortune (2002)</target>
+            </trans-unit>
+            <trans-unit id="flexform.customFile">
+                <target>Eigener Dateipfad – überschreibt Auswahl oben (EXT:… oder absoluter Serverpfad)</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,57 @@
+:lang(de) { quotes: "\201E" "\201C" "\201A" "\2018"; }
+:lang(en) { quotes: "\201C" "\201D" "\2018" "\2019"; }
+:lang(fr) { quotes: "\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A"; }
+:lang(xx) { quotes: "" "" "" ""; }
+
+.sic-fortune q::before { content: open-quote; }
+.sic-fortune q::after  { content: close-quote; }
+
+.sic-fortune {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 3px solid currentColor;
+    font-style: italic;
+}
+.sic-fortune__author {
+    margin-top: 0.5em;
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+/* Background-image mode — URL set as inline style attribute by template */
+.sic-fortune--has-image {
+    position: relative;
+    border-left: none;
+    padding: 2rem;
+    min-height: 10rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.sic-fortune--has-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+.sic-fortune--has-image .sic-fortune__text,
+.sic-fortune--has-image .sic-fortune__author {
+    position: relative;
+    z-index: 2;
+}
+
+/* iOS: background-attachment: fixed is ignored inside scroll containers */
+@supports (-webkit-touch-callout: none) {
+    .sic-fortune--has-image { background-attachment: scroll; }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .sic-fortune--has-image { background-attachment: scroll; }
+}

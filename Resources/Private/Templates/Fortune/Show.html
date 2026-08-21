@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{fortune}">
+    <f:then>
+        <f:variable name="lang">
+            <f:if condition="{fortune.lang}"><f:then>{fortune.lang}</f:then><f:else>xx</f:else></f:if>
+        </f:variable>
+
+        <f:if condition="{backgroundImage}">
+            <f:variable name="bgStyle">background-image: url(<f:uri.image image="{backgroundImage}" />);</f:variable>
+        </f:if>
+
+        <blockquote class="sic-fortune{f:if(condition: backgroundImage, then: ' sic-fortune--has-image')}" lang="{lang}" style="{bgStyle -> f:format.raw()}">
+            <p class="sic-fortune__text"><q>{fortune.text}</q></p>
+            <f:if condition="{fortune.author}">
+                <footer class="sic-fortune__author">&#8212; <cite>{fortune.author}</cite></footer>
+            </f:if>
+        </blockquote>
+    </f:then>
+</f:if>
+
+</html>

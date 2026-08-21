@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <rect width="14" height="10" x="1" y="1" rx="2" fill="#1a1a1a"/>
+  <path d="M1 8h14v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8z" fill="#333"/>
+  <path d="M7 11l-2 3h4l-2-3z" fill="#1a1a1a"/>
+  <text x="3.5" y="7.5" font-family="serif" font-size="7" fill="white" font-style="italic">"</text>
+  <text x="9" y="7.5" font-family="serif" font-size="7" fill="white" font-style="italic">"</text>
+</svg>

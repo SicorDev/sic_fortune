@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="Messages" date="2026-08-12" product-name="sic_fortune">
+        <header/>
+        <body>
+            <trans-unit id="tx_sicfortune_domain_model_fortune">
+                <source>Fortune / Quote</source>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.text">
+                <source>Quote Text</source>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.author">
+                <source>Author</source>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.lang">
+                <source>Language Code (e.g. de, en)</source>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.showon">
+                <source>Shown on Date</source>
+            </trans-unit>
+            <trans-unit id="tx_sicfortune_domain_model_fortune.showon.description">
+                <source>Set automatically in "Citation of the Day" mode (format: YYYY-MM-DD). Clear to make the quote available again.</source>
+            </trans-unit>
+            <trans-unit id="tab.daily">
+                <source>Citation of the Day</source>
+            </trans-unit>
+            <trans-unit id="plugin.fortune.title">
+                <source>Fortune Cookie</source>
+            </trans-unit>
+            <trans-unit id="flexform.sheet.general">
+                <source>Settings</source>
+            </trans-unit>
+            <trans-unit id="flexform.source">
+                <source>Data Source</source>
+            </trans-unit>
+            <trans-unit id="flexform.source.db">
+                <source>Database</source>
+            </trans-unit>
+            <trans-unit id="flexform.source.file">
+                <source>Fortune File (Unix format)</source>
+            </trans-unit>
+            <trans-unit id="flexform.mode">
+                <source>Display Mode</source>
+            </trans-unit>
+            <trans-unit id="flexform.mode.random">
+                <source>Random Quote</source>
+            </trans-unit>
+            <trans-unit id="flexform.mode.daily">
+                <source>Citation of the Day</source>
+            </trans-unit>
+            <trans-unit id="flexform.storagePid">
+                <source>Storage Page (PID, 0 = use TypoScript default)</source>
+            </trans-unit>
+            <trans-unit id="flexform.file">
+                <source>Fortune File</source>
+            </trans-unit>
+            <trans-unit id="flexform.file.de_quotes">
+                <source>German Quotes (Bundled)</source>
+            </trans-unit>
+            <trans-unit id="flexform.file.humorists">
+                <source>Humorists – René Fritz / cc_fortune (2002)</source>
+            </trans-unit>
+            <trans-unit id="flexform.customFile">
+                <source>Custom File Path – overrides selection above (EXT:... or absolute server path)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <settings.source>
+                <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.source</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>db</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.source.db</label>
+                            <value>db</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.source.file</label>
+                            <value>file</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </settings.source>
+            <settings.file>
+                <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.file</label>
+                <displayCond>FIELD:settings.source:=:file</displayCond>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>EXT:sic_fortune/Resources/Private/Fortunes/de_quotes</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.file.de_quotes</label>
+                            <value>EXT:sic_fortune/Resources/Private/Fortunes/de_quotes</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.file.humorists</label>
+                            <value>EXT:sic_fortune/Resources/Private/Fortunes/humorists</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </settings.file>
+            <settings.customFile>
+                <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.customFile</label>
+                <displayCond>FIELD:settings.source:=:file</displayCond>
+                <config>
+                    <type>input</type>
+                    <size>50</size>
+                    <placeholder>EXT:mein_sitepackage/Resources/Private/Fortunes/meine_zitate</placeholder>
+                </config>
+            </settings.customFile>
+            <settings.mode>
+                <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.mode</label>
+                <config>
+                    <type>select</type>
+                    <renderType>selectSingle</renderType>
+                    <default>random</default>
+                    <items>
+                        <numIndex index="0">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.mode.random</label>
+                            <value>random</value>
+                        </numIndex>
+                        <numIndex index="1">
+                            <label>LLL:EXT:sic_fortune/Resources/Private/Language/locallang_db.xlf:flexform.mode.daily</label>
+                            <value>daily</value>
+                        </numIndex>
+                    </items>
+                </config>
+            </settings.mode>
+        </el>
+    </ROOT>
+</T3DataStructure>
